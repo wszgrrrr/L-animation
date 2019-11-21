@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="lsy()">hhhhhh</button>
+		<button onclick="lsyy()">aaaaaa</button>
+		<button onclick="lsyyy()">ccccccc</button>
+		<div id="lsy">我</div>
+		<div id="lsyy">是</div>
+		<div id="lsyyy">人</div>
+	</body>
+	<script>
+		(function (){
+			document.getElementById("lsy").style.display="block";
+			document.getElementById("lsyy").style.display="none";
+			document.getElementById("lsyyy").style.display="none";
+		})();
+		function lsy(){
+			document.getElementById("lsy").style.display="block";
+			document.getElementById("lsyy").style.display="none";
+			document.getElementById("lsyyy").style.display="none";
+		};
+		function lsyy(){
+			document.getElementById("lsy").style.display="none";
+			document.getElementById("lsyy").style.display="block";
+			document.getElementById("lsyyy").style.display="none";
+		};
+		function lsyyy(){
+			document.getElementById("lsy").style.display="none";
+			document.getElementById("lsyy").style.display="none";
+			document.getElementById("lsyyy").style.display="block";
+		};
+		
+	</script>
+<html>

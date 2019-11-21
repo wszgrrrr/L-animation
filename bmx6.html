@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>宝马X6</title>
+	</head>
+	<body>
+		<input type="text" id="age" value="" />周岁
+		<input type="text" id="txt_value" value="" disabled />次
+		<div id="show"></div>
+		<div id="ce"></div>
+		<input type="button" onclick="ceshi()" value="提交" />
+	</body>
+	<script>
+		// $.ajax({url:"",data:{},success:function(){},error:function(){}})
+		function ceshi() {
+			var element = document.getElementById(age).value;
+			if (element <= 17) {
+				alert("年少青春时光,切莫黄渡光阴！");
+			} else if (element >= 18 && element < 24) {
+				alert("大学校园的书香气息陈曼,请珍惜在校的每一天!")
+			} else if (element >= 25 && element <= 35) {
+				alert("古语30而立,天行健君子以自强不息!");
+			} else if (element == 65) {
+				var txt = document.querySelector("#txt_value");
+				document.getElementById("show").innerHTML = "<input type='button' id ='btn_value'onclick='dainji()'value='连续抽奖'/>";
+				
+				
+			}
+		}
+	</script>
+</html>
